@@ -1,0 +1,6 @@
+Tokens with special needs
+  - cvxcrvRenWBTC: "0x74b79021Ea6De3f0D1731fb8BdfF6eE7DF10b8Ae"
+      Users don't hold tokens directly. Use internal function transferFrom to transfer to bot
+  - cvxMIM_3LP3CRV_f: "0xabB54222c2b77158CC975a2b715a3d703c256F05"
+      Same as above.
+    

@@ -1,0 +1,24 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.5"
+  },
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "npx hardhat compile",
+    "ganache": "ganache-cli -e 10000000000 -a 100",
+    "lint:sol": "solhint 'contracts/**/*.sol'",
+    "lint:sol:fix": "solhint 'contracts/**/*.sol' --fix",
+    "lint:fix": "eslint . --fix --ext ts --ext js && npm run lint:sol:fix",
+    "lint:check": "eslint . --ext ts --ext js && npm run lint:sol",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write .",
+    "test": "NODE_OPTIONS='--max-old-space-size=4096' npx hardhat test",
+    "coverage": "NODE_OPTIONS='--max-old-space-size=4096' npx hardhat coverage"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "axios": "^1.2.2"
+  }
+}
